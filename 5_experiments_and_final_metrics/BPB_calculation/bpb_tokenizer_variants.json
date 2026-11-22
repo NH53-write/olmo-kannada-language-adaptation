@@ -1,0 +1,80 @@
+{
+  "base": {
+    "bits_per_byte": 0.8476992618287529,
+    "bits_per_char": 2.2387475992598094,
+    "tokens": 6429616,
+    "chars_per_token": 0.5957506638032505,
+    "new_tokens": 0,
+    "n_docs": 1997,
+    "max_len": 4096,
+    "init": "sub-token mean (input + output embeddings)",
+    "variant": {
+      "name": "base",
+      "kind": "bpe",
+      "merges": null,
+      "n": 0
+    }
+  },
+  "bpe_4000": {
+    "bits_per_byte": 1.287457285214676,
+    "bits_per_char": 3.4001349726386456,
+    "tokens": 1102092,
+    "chars_per_token": 3.4756154658594745,
+    "new_tokens": 4000,
+    "n_docs": 1997,
+    "max_len": 4096,
+    "init": "sub-token mean (input + output embeddings)",
+    "variant": {
+      "name": "bpe_4000",
+      "kind": "bpe",
+      "merges": "/workspace/language_adaptation/trained_toks/new_merges.pkl",
+      "n": 4000
+    }
+  },
+  "bpe_excl_4000": {
+    "bits_per_byte": 1.282117940270629,
+    "bits_per_char": 3.3860339273583686,
+    "tokens": 1095523,
+    "chars_per_token": 3.4964560305899557,
+    "new_tokens": 4000,
+    "n_docs": 1997,
+    "max_len": 4096,
+    "init": "sub-token mean (input + output embeddings)",
+    "variant": {
+      "name": "bpe_excl_4000",
+      "kind": "bpe",
+      "merges": "/workspace/language_adaptation/trained_toks/new_merges_excl.pkl",
+      "n": 4000
+    }
+  },
+  "unigram_byte_4000": {
+    "bits_per_byte": 1.3646713848737648,
+    "bits_per_char": 3.60405502780995,
+    "tokens": 1232528,
+    "chars_per_token": 3.1077979567198475,
+    "new_tokens": 3524,
+    "n_docs": 1997,
+    "max_len": 4096,
+    "init": "sub-token mean (input + output embeddings)",
+    "variant": {
+      "name": "unigram_byte_4000",
+      "kind": "unigram_byte",
+      "path": "/workspace/language_adaptation/trained_toks/unigram_4000.json"
+    }
+  },
+  "unigram_char_4000": {
+    "bits_per_byte": 1.2653225781898925,
+    "bits_per_char": 3.341677894234272,
+    "tokens": 1090860,
+    "chars_per_token": 3.511402013090589,
+    "new_tokens": 3998,
+    "n_docs": 1997,
+    "max_len": 4096,
+    "init": "sub-token mean (input + output embeddings)",
+    "variant": {
+      "name": "unigram_char_4000",
+      "kind": "unigram_char",
+      "path": "/workspace/language_adaptation/trained_toks/unigram_4000_char.json"
+    }
+  }
+}
